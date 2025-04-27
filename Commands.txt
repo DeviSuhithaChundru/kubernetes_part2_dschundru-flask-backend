@@ -1,0 +1,64 @@
+1. In the terminal, I ran the command below to clone the backend repository, replacing [GITHUB-URL] with my own GitHub repo URL:
+
+git clone [GITHUB-URL]
+
+
+2. Install Git in EC2 Instance:
+
+sudo dnf update
+sudo dnf install git -y
+
+3. Checking Git version:
+
+git --version
+
+4. I configured Git by running the following commands and replacing the placeholders with my actual name and email:
+
+git config --global user.name "DeviSuhithaChundru"
+git config --global user.email "cdevisuhitha@gmail.com"
+
+5. I ran the ls command, which lists all files and folders in my current directory:
+
+ls
+
+6. To build a container image, I ran the following command in my EC2 instance's terminal
+
+docker build -t kubernetes-part2_dschundru-flask-backend .
+
+7. Install and Configur Docker
+
+sudo yum install -y docker
+
+8. Start Docker
+
+sudo service docker start
+
+9. To confirm which user I was using in the terminal, I ran
+
+whoami
+
+10. To add ec2-user to the Docker group
+
+sudo usermod -a -G docker ec2-user
+
+11. Make sure my ec2-user has been added to the Docker group:
+
+groups ec2-user
+
+12. To build my Docker image, I first needed to navigate into the application directory that had the Dockerfile.
+
+cd kubernetes_part2_dschundru-flask-backend
+
+13. I ran command inside kubernetes_part2_dschundru-flask-backend to see the Dockerfile and backend files.
+
+ls
+
+14. To create a new Amazon ECR repository using this command:
+
+aws ecr create-repository \
+  --repository-name kubernetes_part2_dschundru-flask-backend \
+  --image-scanning-configuration scanOnPush=true \
+
+
+
+
