@@ -33,6 +33,7 @@ This hands-on project helped me strengthen my cloud, containerization, and orche
 
 Local EC2 Instance | |---> Docker Installed |---> Flask Backend Cloned and Containerized | |---> Docker Image Pushed to Amazon ECR | |---> Ready for Deployment on Amazon EKS Cluster
 
+![Architecture Diagram](https://github.com/DeviSuhithaChundru/kubernetes_part2_dschundru-flask-backend/blob/main/Screenshots/Project_Architecture.png)
 
 ---
 
@@ -58,7 +59,12 @@ Local EC2 Instance | |---> Docker Installed |---> Flask Backend Cloned and Conta
 | IAM permission issues for EKS cluster creation | Created and attached a custom IAM role with AdministratorAccess |
 
 ---
+## 📸 Key Screenshots
 
+You can view all the setup screenshots here:  
+[📂 Screenshots](https://github.com/DeviSuhithaChundru/kubernetes_part2_dschundru-flask-backend/tree/main/Screenshots)
+
+---
 ## 🙋‍♀️ Contact Me
 
 - 🌐 [LinkedIn](https://www.linkedin.com/in/suhithachundru/)  
