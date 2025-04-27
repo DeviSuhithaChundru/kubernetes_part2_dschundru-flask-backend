@@ -1,4 +1,4 @@
-# 🚀 Kubernetes Series Part 2: Building a Scalable Backend Deployment Pipeline on AWS
+# Kubernetes Series Part 2: Building a Scalable Backend Deployment Pipeline on AWS
 
 ![AWS](https://img.shields.io/badge/AWS-FF9900?logo=amazonaws&logoColor=white&style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)
