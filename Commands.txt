@@ -2,7 +2,6 @@
 
 git clone [GITHUB-URL]
 
-
 2. Install Git in EC2 Instance:
 
 sudo dnf update
